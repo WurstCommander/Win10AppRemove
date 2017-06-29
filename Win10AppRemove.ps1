@@ -4,7 +4,7 @@
 # Description:
 # Removes Windows 10 mandatory  Apps which can't be deinstalled via Startmenu.
 #
-# Tip: Open all your apps with explorer command ":shell:appsfolder"
+# Tip: Open all your apps with explorer command "shell:appsfolder"
 ##################################################################################
 
 
