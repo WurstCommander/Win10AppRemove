@@ -10,13 +10,13 @@ Hover over the icon in the start menu, right click and choose "deinstall". This 
 
 1. Copy the script onto your hard drive into a directory you will not forget two seconds after you copied the file :-)
 
-2. Edit the Powershell-Script and comment out the apps which you don't want to remove.
+2. Edit the Powershell-Script (Win10AppRemove.ps1) and comment out the apps which you don't want to remove.
    Just put # before the line with the command like:
    #get-appxpackage -allusers *alarms* | remove-appxpackage
    
    All apps without the comment character are removed.
    
-3. Start Windows Power Shell *with admin rights* (right click and "run as administrator") and start the script. Without admin rights the    script will do nothing.
+3. Start Windows Power Shell **with admin rights** (right click and "run as administrator") and start the script. Without admin rights    the script will do nothing.
 
 
 ### List of apps which are currently supported: ###
@@ -64,9 +64,10 @@ I **strongly** advise against removing the Windows Store App.
 
 ## Tips / Workaround: ##
 
-- If you don't get any errormessages, remove "#$ErrorActionPreference = "SilentlyContinue"" from the script. 
-  I included it, because some apps throw some errormessages (app is already removed etc.) 
-  which CLS can't remove from screen. I don't know why.
+- For finding errors:
+  If you don't get any errormessages, remove "#$ErrorActionPreference = "SilentlyContinue"" from the script. 
+  I included it, because some apps throw errormessages (app is already removed etc.) 
+  which CLS can't remove from the console. I don't know why.
 
 
 ## Disclamer: ##
@@ -77,10 +78,3 @@ I tested the script, it works for me, but I got only a few Windows 10 PCs to tes
 Suggestions, fixes and new features are welcome.
 
 Have a nice day, your Wurstcommander.
-
-
-
-
-
-
-
