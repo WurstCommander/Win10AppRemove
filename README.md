@@ -8,13 +8,15 @@ even mandatory apps like XBox which can't be deinstalled via the start menu.
 At first, I would suggest that you deinstall all apps which you don't need via the start menu. 
 Hover over the icon in the start menu, right click and choose "deinstall".
 
-1. Edit the Powershell-Script and comment out the apps which you don't want to remove.
+1. Copy the script onto your hard drive, into a directory you will not forget two seconds after you copied the file :-)
+
+2. Edit the Powershell-Script and comment out the apps which you don't want to remove.
    Just put # before the line with the command like:
    #get-appxpackage -allusers *alarms* | remove-appxpackage
    
    All apps without the comment character are removed.
    
-2. Start Windows Power Shell with admin rights (right click and "run as administrator") and start the script.
+3. Start Windows Power Shell with admin rights (right click and "run as administrator") and start the script.
 
 
 ### List of apps which are currently supported: ###
