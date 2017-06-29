@@ -8,6 +8,11 @@ even mandatory apps like XBox which can't be deinstalled via normal measures lik
 At first, I would suggest that you deinstall all apps which you don't need via the start menu. 
 Hover over the icon in the start menu, right click and choose "deinstall". This is the "normal" way to remove apps which aren't reluctant like the ones this scripts removes.
 
+If this is your first time executing PowerShell Scripts you have to allow scripts to be executed:
+Execute this command in the PowerShell: "Set-ExecutionPolicy Unrestricted". 
+After using the script you can that the executelevel back to "normal" if you like.
+
+
 1. Copy the script onto your hard drive into a directory which you won't forget two seconds after you copied the file :-)
 
 2. Edit the Powershell-Script (Win10AppRemove.ps1) and comment out the apps which you don't want to remove.
