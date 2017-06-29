@@ -16,7 +16,7 @@ Hover over the icon in the start menu, right click and choose "deinstall". This 
    
    All apps without the comment character are removed.
    
-3. Start Windows Power Shell with admin rights (right click and "run as administrator") and start the script.
+3. Start Windows Power Shell *with admin rights* (right click and "run as administrator") and start the script. Without admin rights the    script will do nothing.
 
 
 ### List of apps which are currently supported: ###
@@ -61,6 +61,13 @@ Hover over the icon in the start menu, right click and choose "deinstall". This 
 - Xbox
 
 I **strongly** advise against removing the Windows Store App.
+
+## Tips / Workaround: ##
+
+- If you don't get any errormessages, remove "#$ErrorActionPreference = "SilentlyContinue"" from the script. 
+  I included it, because some apps throw some errormessages (app is already removed etc.) 
+  which CLS can't remove from screen. I don't know why.
+
 
 ## Disclamer: ##
 
