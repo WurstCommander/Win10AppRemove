@@ -72,7 +72,7 @@ I **strongly** advise against removing the Windows Store App.
 
 ## Disclamer: ##
 
-*Use the script at your own risk*, make backups, blah blah. 
+**Use the script at your own risk**, make backups, blah blah. 
 I tested the script, it works for me, but I got only a few Windows 10 PCs to test it and so on.
 
 Suggestions, fixes and new features are welcome.
