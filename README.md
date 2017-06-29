@@ -1,7 +1,7 @@
-# Windows 10 Apps Remove
+# Windows 10 Apps Remover
 
 Powershell Script which deinstalls / removes Windows 10 apps, 
-even mandatory apps like XBox which can't be deinstalled via the start menu.
+even mandatory apps like XBox which can't be deinstalled via normal measures like startmenu, programms and features and so on.
 
 ## Instructions:
 
