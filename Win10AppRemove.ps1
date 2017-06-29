@@ -54,8 +54,12 @@ write-host "`n"
 write-host "---------------------------------------------------------------------"
 PAUSE
 clear-host
+
+
 ###############################################################################
-# All apps which aren't commented out will be removed / deinstalled
+#                                  APP LIST                                   #
+#                                                                             #
+# All apps which aren't commented out will be removed / deinstalled           #
 ###############################################################################
 
 #To uninstall 3D Builder:
