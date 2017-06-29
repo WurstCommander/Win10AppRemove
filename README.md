@@ -1,14 +1,14 @@
 # Windows 10 Apps Remove
 
-Powershell Skript which deinstalles / removes Windows 10 apps, 
-even mandetory apps like XBox which can't be deinstalled via the startmenu.
+Powershell Script which deinstalls / removes Windows 10 apps, 
+even mandatory apps like XBox which can't be deinstalled via the start menu.
 
 ## Instructions:
 
-At first I would suggest that you deinstall all apps which you don't need via the startmenu.
-Hover over the icon in the startmenu, right click and choose "deinstall".
+At first, I would suggest that you deinstall all apps which you don't need via the start menu. 
+Hover over the icon in the start menu, right click and choose "deinstall".
 
-1. Edit the Powershell-Script and comment out the apps which you don't want to deinstall / remove.
+1. Edit the Powershell-Script and comment out the apps which you don't want to remove.
    Just put # before the line with the command like:
    #get-appxpackage -allusers *alarms* | remove-appxpackage
    
@@ -58,8 +58,11 @@ Hover over the icon in the startmenu, right click and choose "deinstall".
 - Windows Store (DANGER - Don't remove, maybe you want to install apps? and it's needed for updates)
 - Xbox
 
+I **strongly** advise against removing the Windows Store App.
 
-I **strongly** adivse against removing the Windows Store App.
+Disclamer:
+
+*Use the script at your own risk*, make backups, I tested the script it works for me, but I got only so much time to investing into testing.
 
 
 
