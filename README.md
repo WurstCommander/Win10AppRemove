@@ -72,7 +72,8 @@ I **strongly** advise against removing the Windows Store App.
 - For finding errors:
   If you don't get any errormessages, remove "#$ErrorActionPreference = "SilentlyContinue"" from the script. 
   I included it, because some apps throw errormessages (app is already removed etc.) 
-  which CLS can't remove from the console. I don't know why.
+  which the clear screen command (CLS) can't remove from the console. I don't know why, so I removed the spamming of console. 
+  Feel free to choose log-spaming or not :-)
   
 - In the current version of the script I keep the weather app because I like it. I would suggest to remove
   Money, News, Sports and Weather apps together and reinstall the weather app again if you want to use it.
