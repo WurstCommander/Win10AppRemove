@@ -19,7 +19,7 @@ After using the script you can that the executelevel back to "normal" if you lik
    Just put # before the line with the command like:
    #get-appxpackage -allusers *alarms* | remove-appxpackage
    
-   All apps without the comment character are removed.
+   All apps without the comment character will be removed.
    
 3. Start Windows Power Shell **with admin rights** (right click and "run as administrator") and start the script. Without admin rights    the script will do nothing.
 
