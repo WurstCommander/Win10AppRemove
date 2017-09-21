@@ -1,5 +1,13 @@
-# Windows 10 Apps Remover
+# Windows 10 Apps Remover 0.2
 
+
+## Changelog v0.2:
+
+- added Removal of Paint 3D
+- added check for admin rights
+- added .reg file for removal of "Edit with Paint 3D" context menu
+
+## Description
 Powershell Script which deinstalls / removes Windows 10 apps, 
 even mandatory apps like XBox which can't be deinstalled with normal measures like startmenu, programms and features and so on.
 

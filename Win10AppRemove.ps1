@@ -1,5 +1,5 @@
 ##################################################################################
-# Windows 10 Apps Remover v0.1
+# Windows 10 Apps Remover v0.2
 # Powershell Script
 # Description:
 # Removes Windows 10 mandatory  Apps which can't be deinstalled via Startmenu.
@@ -27,6 +27,21 @@ write-host "I didn't get you, sorry."
 reboot 
 }
 }
+
+#admin rights check
+function checkadmin  
+{  
+    $user = [Security.Principal.WindowsIdentity]::GetCurrent();
+	$checkresult = (New-Object Security.Principal.WindowsPrincipal $user).IsInRole([Security.Principal.WindowsBuiltinRole]::Administrator)
+    if($checkresult -eq $False){
+		write-host "---------------------------------------------------------------------"
+		write-host "No administrator-rights found, start as administrator!!!"
+		write-host "---------------------------------------------------------------------"		
+		PAUSE
+		exit
+	}
+		
+}
 # functions end
 
 # global variables
@@ -35,9 +50,10 @@ reboot
 # Some apps will return errors messages if they are already deinstalled
 $ErrorActionPreference = "SilentlyContinue"
 
+checkadmin
 clear-host
 write-host "---------------------------------------------------------------------"
-write-host " Removing Windows 10 Apps v0.1                                       "
+write-host " Windows 10 Apps Remover v0.2                                        "
 write-host "---------------------------------------------------------------------"
 write-host "`n"
 write-host " Please make sure that only apps you would like to remove 
@@ -55,6 +71,12 @@ write-host "`n"
 write-host "---------------------------------------------------------------------"
 PAUSE
 clear-host
+
+
+
+checkadmin
+
+PAUSE
 
 
 ###############################################################################
@@ -180,6 +202,10 @@ get-appxpackage -allusers *holographic* | remove-appxpackage
 #To uninstall Xbox:
 get-appxpackage -allusers *xbox* | remove-appxpackage
 clear-host
+
+##To uninstall Paint 3D
+get-AppxPackage *MSPaint* | remove-AppxPackage
+
 ## The end ;)
 
 write-host "--------------------------------------------------------------------"
