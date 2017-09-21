@@ -1,9 +1,9 @@
 # Windows 10 Apps Remover 0.2
 
+### Changelog v0.2:
 
-## Changelog v0.2:
-
-- added Removal of Paint 3D
+- added removal of "Paint 3D" 
+  (a spinoff of Microsoft Paint, is one of several applications introduced with the Windows 10 Creators Update - just get paint.net)
 - added check for admin rights
 - added .reg file for removal of "Edit with Paint 3D" context menu
 
