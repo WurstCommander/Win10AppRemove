@@ -1,17 +1,20 @@
-# Windows 10 Apps Remover 0.2
+# Windows 10 Apps Remover 1.2
 
-### Changelog v0.2:
+## Changelog 1.2
 
 - added removal of "Paint 3D" 
   (a spinoff of Microsoft Paint, is one of several applications introduced with the Windows 10 Creators Update - just get paint.net)
 - added check for admin rights
 - added .reg file for removal of "Edit with Paint 3D" context menu
+- changed version to 1.1, marketing demanded it :-)
+- updated readme
 
 ## Description
+
 Powershell Script which deinstalls / removes Windows 10 apps, 
 even mandatory apps like XBox which can't be deinstalled with normal measures like startmenu, programms and features and so on.
 
-## Instructions:
+## Instructions
 
 At first, I would suggest that you deinstall all apps which you don't need via the start menu. 
 Hover over the icon in the start menu, right click and choose "deinstall". This is the "normal" way to remove apps which aren't reluctant like the ones this scripts removes.
@@ -31,8 +34,7 @@ After using the script you can that the executelevel back to "normal" if you lik
    
 3. Start Windows Power Shell **with admin rights** (right click and "run as administrator") and start the script. Without admin rights    the script will do nothing.
 
-
-### List of apps which are currently supported: ###
+### supported apps
 
 - Alarms & Clock
 - App Connector
@@ -75,7 +77,7 @@ After using the script you can that the executelevel back to "normal" if you lik
 
 I **strongly** advise against removing the Windows Store App.
 
-## Tips / Workaround: ##
+## Tips / Workarounds
 
 - For finding errors:
   If you don't get any errormessages, remove "#$ErrorActionPreference = "SilentlyContinue"" from the script. 
@@ -86,7 +88,7 @@ I **strongly** advise against removing the Windows Store App.
 - In the current version of the script I keep the weather app because I like it. I would suggest to remove
   Money, News, Sports and Weather apps together and reinstall the weather app again if you want to use it.
 
-## Disclamer: ##
+## Disclamer
 
 **Use the script at your own risk**, make backups, blah blah. 
 I tested the script, it works for me, but I got only a few Windows 10 PCs to test it and so on.
