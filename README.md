@@ -87,6 +87,7 @@ I **strongly** advise against removing the Windows Store App.
   
 - In the current version of the script I keep the weather app because I like it. I would suggest to remove
   Money, News, Sports and Weather apps together and reinstall the weather app again if you want to use it.
+- Tip: Open all your apps with explorer command "shell:appsfolder"
 
 ## Disclamer
 
