@@ -1,4 +1,7 @@
-# Windows 10 Apps Remover 1.2
+# Windows 10 Apps Remover 1.3
+
+## Changelog 1.3
+- added .reg files to remove "show compressed files as folders" functionally from Windows 7/8/10
 
 ## Changelog 1.2
 
@@ -17,11 +20,11 @@ even mandatory apps like XBox which can't be deinstalled with normal measures li
 ## Instructions
 
 At first, I would suggest that you deinstall all apps which you don't need via the start menu. 
-Hover over the icon in the start menu, right click and choose "deinstall". This is the "normal" way to remove apps which aren't reluctant like the ones this scripts removes.
+Hover over the icon in the start menu, right click and choose "deinstall". This is the "normal" way to remove apps which aren't reluctant like the ones this script removes.
 
 If this is your first time executing PowerShell Scripts you have to allow scripts to be executed:
 Execute this command in the PowerShell: "Set-ExecutionPolicy Unrestricted". 
-After using the script you can that the executelevel back to "normal" if you like.
+After using the script you can that the execute level back to "normal" if you like.
 (More here: http://windowsitpro.com/powershell/running-powershell-scripts-easy-1-2-3)
 
 1. Copy the script onto your hard drive into a directory which you won't forget two seconds after you copied the file :-)
@@ -32,7 +35,7 @@ After using the script you can that the executelevel back to "normal" if you lik
    
    All apps without the comment character will be removed.
    
-3. Start Windows Power Shell **with admin rights** (right click and "run as administrator") and start the script. Without admin rights    the script will do nothing.
+3. Start Windows Power Shell **with admin rights** (right click and "run as administrator") and start the script. Without admin rights the script will do nothing.
 
 ### supported apps
 
@@ -77,19 +80,28 @@ After using the script you can that the executelevel back to "normal" if you lik
 
 I **strongly** advise against removing the Windows Store App.
 
+## Remove Zip - Files as folders
+Windows shows compressed files as folders, for files like .cab and .zip.
+
+I personally find this feature very annoying, "remove_zip_files_as_folders.reg" uses the Regedit to remove it.
+Same for .cab Files -> "remove_cab_files_as_folders.reg"
+
+## Removal of "Edit with Paint 3D" context menu
+It's annoying too, so you can use: remove_edit_with_Paint_3D_context_menu to get rid of it.
+
 ## Tips / Workarounds
 
 - For finding errors:
   If you don't get any errormessages, remove "#$ErrorActionPreference = "SilentlyContinue"" from the script. 
-  I included it, because some apps throw errormessages (app is already removed etc.) 
-  which the clear screen command (CLS) can't remove from the console. I don't know why, so I removed the spamming of console. 
-  Feel free to choose log-spaming or not :-)
+  I included it, because some apps throw error messages (app is already removed etc.) 
+  which the clear screen command (CLS) can't remove from the console. I don't know why, so I removed the spamming of the console. 
+  Feel free to choose log-spamming or not :-)
   
-- In the current version of the script I keep the weather app because I like it. I would suggest to remove
+- In the current version of the script, I keep the weather app because I like it. I would suggest removing
   Money, News, Sports and Weather apps together and reinstall the weather app again if you want to use it.
 - Tip: Open all your apps with explorer command "shell:appsfolder"
 
-## Disclamer
+## Disclaimer
 
 **Use the script at your own risk**, make backups, blah blah. 
 I tested the script, it works for me, but I got only a few Windows 10 PCs to test it and so on.
