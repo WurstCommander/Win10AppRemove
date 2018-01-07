@@ -194,6 +194,9 @@ get-appxpackage -allusers *GetHelp* | remove-appxpackage
 #To uninstall Windows Holographic:
 get-appxpackage -allusers *holographic* | remove-appxpackage
 
+#To Windows Camera
+#get-appxpackage -allusers *WindowsCamera* | remove-appxpackage
+
 #To uninstall Windows Store: (DANGER - Don't remove, maybe you want to install apps? and it's needed for updates)
 #########get-appxpackage -allusers *windowsstore* | remove-appxpackage
 
