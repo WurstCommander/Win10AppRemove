@@ -1,5 +1,10 @@
 # Windows 10 Apps Remover 1.3
 
+## Changelog 1.31
+- added Get Help add
+- removed duplicated apps
+- minor changes
+
 ## Changelog 1.3
 - added .reg files to remove "show compressed files as folders" functionally from Windows 7/8/10
 
