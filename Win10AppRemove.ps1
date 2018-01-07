@@ -1,9 +1,10 @@
 ##################################################################################
-# Windows 10 Apps Remover 1.3
+# Windows 10 Apps Remover 1.31
 # Powershell Script
 # Description:
 # Removes Windows 10 mandatory apps which can't be deinstalled via Startmenu.
 #
+# Read the README.md !
 # Tip: Open all your apps with explorer command "shell:appsfolder"
 ##################################################################################
 
@@ -52,7 +53,7 @@ $ErrorActionPreference = "SilentlyContinue"
 checkadmin
 clear-host
 write-host "---------------------------------------------------------------------"
-write-host " Windows 10 Apps Remover 1.2                                         "
+write-host " Windows 10 Apps Remover 1.31                                        "
 write-host "---------------------------------------------------------------------"
 write-host "`n"
 write-host " Please make sure that only apps you would like to remove 
