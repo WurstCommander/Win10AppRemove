@@ -5,7 +5,9 @@
 # Removes Windows 10 mandatory apps which can't be deinstalled via Startmenu.
 #
 # Read the README.md !
-# Tip: Open all your apps with explorer command "shell:appsfolder"
+# Tip: 	Open all your installed apps with explorer command "shell:appsfolder"
+# 	Get all app packagesnames:
+# 	Get-AppxPackage -AllUsers | Select Name, PackageFullNameshell:appsfolder
 ##################################################################################
 
 
