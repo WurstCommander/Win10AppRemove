@@ -1,7 +1,7 @@
 # Windows 10 Apps Remover
 
 ## Changelog 1.31
-- added Get Help add
+- added Get Help and Windows Camera
 - removed duplicated apps
 - minor changes
 
