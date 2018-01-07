@@ -1,4 +1,4 @@
-# Windows 10 Apps Remover 1.3
+# Windows 10 Apps Remover
 
 ## Changelog 1.31
 - added Get Help add
