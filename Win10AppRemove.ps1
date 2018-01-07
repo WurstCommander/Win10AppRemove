@@ -195,12 +195,9 @@ get-appxpackage -allusers *holographic* | remove-appxpackage
 #To uninstall Windows Store: (DANGER - Don't remove, maybe you want to install apps? and it's needed for updates)
 #########get-appxpackage -allusers *windowsstore* | remove-appxpackage
 
-#To uninstall Xbox:
+#To uninstall Xbox Apps:
 get-appxpackage -allusers *xbox* | remove-appxpackage
 clear-host
-
-##To uninstall Paint 3D
-get-AppxPackage *MSPaint* | remove-AppxPackage
 
 ## The end ;)
 
