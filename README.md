@@ -23,7 +23,8 @@ At first, I would suggest that you deinstall all apps which you don't need via t
 Hover over the icon in the start menu, right click and choose "deinstall". This is the "normal" way to remove apps which aren't reluctant like the ones this script removes.
 
 **If this is your first time executing PowerShell Scripts you have to allow scripts to be executed:
-Execute this command in the PowerShell: "Set-ExecutionPolicy Unrestricted". 
+Execute this command in the PowerShell: "Set-ExecutionPolicy Unrestricted".
+
 After using the script you can that the execute level back to "Set-ExecutionPolicy Restricted" if you like.**
 
 (More here: http://windowsitpro.com/powershell/running-powershell-scripts-easy-1-2-3 and here: https://technet.microsoft.com/en-us/library/ee176961.aspx)
