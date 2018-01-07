@@ -185,6 +185,9 @@ get-appxpackage -allusers *3d* | remove-appxpackage
 #To uninstall Weather: (I like it :-) )
 #get-appxpackage -allusers *bingweather* | remove-appxpackage
 
+#To uninstall Get-Help App (kind of useless)
+get-appxpackage -allusers *GetHelp* | remove-appxpackage
+
 #To uninstall Windows Holographic:
 get-appxpackage -allusers *holographic* | remove-appxpackage
 
