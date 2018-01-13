@@ -2,7 +2,9 @@
 
 ## Changelog 1.32
 - I added 'registry-status-bar-onedrive-entry.jpg' how to remove the OneDrive link in the explorer, which is super annoying.
-- How to remove the mixed-reality-portal -> 'registry-status-bar-onedrive-entry.jpg'
+- How to remove the Mixed Reality Portal -> 'Add Mixed Reality To Settings.reg'. With this you can deinstall like this
+Open Settings and go to Mixed Reality.
+On the left, select Uninstall.
 
 ## Changelog 1.31
 - added Get Help and Windows Camera
