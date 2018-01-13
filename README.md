@@ -1,9 +1,14 @@
 # Windows 10 Apps Remover
 
 ## Changelog 1.32
+Remove Onedrive from explorer and deinstall Mixed Reality Portal
+
 - I added 'registry-status-bar-onedrive-entry.jpg' how to remove the OneDrive link in the explorer, which is super annoying.
-- How to remove the Mixed Reality Portal -> 'Add Mixed Reality To Settings.reg'. With this you can deinstall like this
-Open Settings and go to Mixed Reality.
+- How to remove the Mixed Reality Portal -> 'Add Mixed Reality To Settings.reg'. 
+Double-click the file "Add Mixed Reality to Settings.reg" and confirm the import operation.
+This tweak adds the 32-DWORD value FirstRunSucceeded to the Registry with a value data of 1 under the key HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Holographic.
+
+After that this you can deinstall, open Settings and go to Mixed Reality.
 On the left, select Uninstall.
 
 ## Changelog 1.31
