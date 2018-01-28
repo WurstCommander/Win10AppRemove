@@ -99,7 +99,7 @@ get-appxpackage -allusers *communicationsapps* | remove-appxpackage
 #get-appxpackage -allusers *calculator* | remove-appxpackage
 
 #To uninstall Camera:
-#get-appxpackage -allusers  *camera* | remove-appxpackage
+#get-appxpackage -allusers *camera* | remove-appxpackage
 
 #To uninstall Feedback Hub:
 get-appxpackage -allusers *feedback* | remove-appxpackage
@@ -180,7 +180,7 @@ get-appxpackage -allusers *sticky* | remove-appxpackage
 get-appxpackage -allusers *sway* | remove-appxpackage
 
 #To uninstall View 3D:
-get-appxpackage -allusers *3d* | remove-appxpackage
+get-appxpackage -allusers *3dViewer* | remove-appxpackage
 
 #To uninstall Voice Recorder:
 #get-appxpackage -allusers *soundrecorder* | remove-appxpackage
@@ -200,7 +200,7 @@ get-appxpackage -allusers *holographic* | remove-appxpackage
 #To uninstall Windows Store: (DANGER - Don't remove, maybe you want to install apps? and it's needed for updates)
 #########get-appxpackage -allusers *windowsstore* | remove-appxpackage
 
-#To uninstall Xbox Apps:
+#To uninstall Xbox Apps (Don't deinstall if you would like to play XBOX Live apps like Forza 7):
 get-appxpackage -allusers *xbox* | remove-appxpackage
 clear-host
 
