@@ -117,6 +117,7 @@ It's annoying too, so you can use: remove_edit_with_Paint_3D_context_menu to get
 - In the current version of the script, I keep the weather app because I like it. I would suggest removing
   Money, News, Sports and Weather apps together and reinstall the weather app again if you want to use it.
 - Tip: Open all your apps with explorer command "shell:appsfolder"
+- So reinstall all apps execute this command: Get-AppxPackage -AllUsers| Foreach {Add-AppxPackage -DisableDevelopmentMode -Register “$($_.InstallLocation)\AppXManifest.xml”}
 
 ## Disclaimer
 
