@@ -2,7 +2,7 @@
 # Windows 10 Apps Remover 1.31
 # Powershell Script
 # Description:
-# Removes Windows 10 mandatory apps which can't be deinstalled via Startmenu.
+# Removes Windows 10 mandatory apps which can't be deinstalled via startmenu.
 #
 # Read the README.md !
 # Tip: 	Open all your installed apps with explorer command "shell:appsfolder"
@@ -17,17 +17,17 @@ function reboot{
 $rebootanswer = Read-Host -Prompt "Should the system reboot? (yes/no)"
 
 If ($rebootanswer -eq "yes") {
-write-host "Rebooting now..."
-Restart-Computer
+	write-host "Rebooting now..."
+	Restart-Computer
 }
 elseif ($rebootanswer -eq "no"){
-write-host "`n"
-write-host "Thanks for using the script, have a nice day."
+	write-host "`n"
+	write-host "Thanks for using the script, have a nice day."
 }
 else{
-write-host "`n"
-write-host "I didn't get you, sorry."
-reboot 
+	write-host "`n"
+	write-host "I didn't get you, sorry."
+	reboot
 }
 }
 
@@ -87,7 +87,7 @@ get-appxpackage -allusers *3dbuilder* | remove-appxpackage
 get-appxpackage -allusers *alarms* | remove-appxpackage
 
 #To uninstall App Connector:
-get-appxpackage -allusers *appconnector* | remove-appxpackage
+#get-appxpackage -allusers *appconnector* | remove-appxpackage
 
 #To uninstall App Installer:
 #get-appxpackage -allusers *appinstaller* | remove-appxpackage
@@ -195,7 +195,7 @@ get-appxpackage -allusers *GetHelp* | remove-appxpackage
 get-appxpackage -allusers *holographic* | remove-appxpackage
 
 #To Windows Camera
-#get-appxpackage -allusers *WindowsCamera* | remove-appxpackage
+get-appxpackage -allusers *WindowsCamera* | remove-appxpackage
 
 #To uninstall Windows Store: (DANGER - Don't remove, maybe you want to install apps? and it's needed for updates)
 #########get-appxpackage -allusers *windowsstore* | remove-appxpackage
