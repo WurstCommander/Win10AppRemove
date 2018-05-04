@@ -13,36 +13,34 @@
 
 ##################################################################################
 # functions start(do not change)
-function reboot{
-$rebootanswer = Read-Host -Prompt "Should the system reboot? (yes/no)"
-
-If ($rebootanswer -eq "yes") {
-	write-host "Rebooting now..."
-	Restart-Computer
-}
-elseif ($rebootanswer -eq "no"){
-	write-host "`n"
-	write-host "Thanks for using the script, have a nice day."
-}
-else{
-	write-host "`n"
-	write-host "I didn't get you, sorry."
-	reboot
-}
+function reboot {
+    $rebootanswer = Read-Host -Prompt "Should the system reboot? (yes/no)"
+    If ($rebootanswer -eq "yes") {
+        write-host "Rebooting now..."
+        Restart-Computer
+    }
+    elseif ($rebootanswer -eq "no") {
+        write-host "`n"
+        write-host "Thanks for using the script, have a nice day."
+    }
+    else {
+        write-host "`n"
+        write-host "I didn't get you, sorry."
+        reboot
+    }
 }
 
 # admin rights check
-function checkadmin  
-{  
+function checkadmin {  
     $user = [Security.Principal.WindowsIdentity]::GetCurrent();
-	$checkresult = (New-Object Security.Principal.WindowsPrincipal $user).IsInRole([Security.Principal.WindowsBuiltinRole]::Administrator)
-    if($checkresult -eq $False){
-		write-host "---------------------------------------------------------------------"
-		write-host "No administrator-rights found, start as administrator!!!"
-		write-host "---------------------------------------------------------------------"		
-		PAUSE
-		exit
-	}
+    $checkresult = (New-Object Security.Principal.WindowsPrincipal $user).IsInRole([Security.Principal.WindowsBuiltinRole]::Administrator)
+    if ($checkresult -eq $False) {
+        write-host "---------------------------------------------------------------------"
+        write-host "No administrator-rights found, start as administrator!!!"
+        write-host "---------------------------------------------------------------------"		
+        PAUSE
+        exit
+    }
 		
 }
 # functions end
