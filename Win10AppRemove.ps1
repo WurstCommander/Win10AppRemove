@@ -1,13 +1,13 @@
 ##################################################################################
-# Windows 10 Apps Remover 1.31
+# Windows 10 Apps Remover 1.311
 # Powershell Script
 # Description:
 # Removes Windows 10 mandatory apps which can't be deinstalled via startmenu.
 #
 # Read the README.md !
 # Tip: 	Open all your installed apps with explorer command "shell:appsfolder"
-# 	Get all app packagesnames:
-# 	Get-AppxPackage -AllUsers | Select Name, PackageFullNameshell:appsfolder
+# 	    Get all app packagesnames:
+# 	    Get-AppxPackage -AllUsers | Select Name, PackageFullNameshell:appsfolder
 ##################################################################################
 
 
@@ -31,22 +31,22 @@ function reboot {
 }
 
 # admin rights check
-function checkadmin {  
+function checkadmin {
     $user = [Security.Principal.WindowsIdentity]::GetCurrent();
     $checkresult = (New-Object Security.Principal.WindowsPrincipal $user).IsInRole([Security.Principal.WindowsBuiltinRole]::Administrator)
     if ($checkresult -eq $False) {
         write-host "---------------------------------------------------------------------"
         write-host "No administrator-rights found, start as administrator!!!"
-        write-host "---------------------------------------------------------------------"		
+        write-host "---------------------------------------------------------------------"
         PAUSE
         exit
     }
-		
+
 }
 # functions end
 ##################################################################################
 # global variables
-# suppress errormessages from removing apps because clear-host didn't work.... 
+# suppress errormessages from removing apps because clear-host didn't work....
 # Some apps will return errors messages if they are already deinstalled
 $ErrorActionPreference = "SilentlyContinue"
 
@@ -56,7 +56,7 @@ write-host "--------------------------------------------------------------------
 write-host " Windows 10 Apps Remover 1.31                                        "
 write-host "---------------------------------------------------------------------"
 write-host "`n"
-write-host " Please make sure that only apps you would like to remove 
+write-host " Please make sure that only apps you would like to remove
  are included in the script."
 write-host "`n"
 write-host " Apps which should stay installed have to be commented out"
@@ -206,6 +206,6 @@ clear-host
 
 write-host "--------------------------------------------------------------------"
 write-host "Removing Apps completed."
-write-host "`n"
-write-host "Rebooting the OS is advised." 
+write-host "\n"
+write-host "Rebooting the OS is advised."
 reboot
