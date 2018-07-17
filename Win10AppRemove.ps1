@@ -53,7 +53,7 @@ $ErrorActionPreference = "SilentlyContinue"
 checkadmin
 clear-host
 write-host "---------------------------------------------------------------------"
-write-host " Windows 10 Apps Remover 1.31                                        "
+write-host " Windows 10 Apps Remover                                             "
 write-host "---------------------------------------------------------------------"
 write-host "`n"
 write-host " Please make sure that only apps you would like to remove
