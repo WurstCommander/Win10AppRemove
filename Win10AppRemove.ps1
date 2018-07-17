@@ -25,7 +25,7 @@ function reboot {
     }
     else {
         write-host "`n"
-        write-host "I didn't get you, sorry."
+        write-host "I didn't get you, sorry. Try again please."
         reboot
     }
 }
