@@ -127,7 +127,3 @@ I tested the script, it works for me, but I got only a few Windows 10 PCs to tes
 Suggestions, fixes and new features are welcome.
 
 Have a nice day, your Wurstcommander.
-
-
-## Requests / suggestions
-they are welcome
