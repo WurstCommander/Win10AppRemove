@@ -1,33 +1,5 @@
 # Windows 10 Apps Remover
 
-## Changelog 1.32
-Remove Onedrive from explorer and deinstall Mixed Reality Portal
-
-- I added 'registry-status-bar-onedrive-entry.jpg' how to remove the OneDrive link in the explorer, which is super annoying.
-- How to remove the Mixed Reality Portal -> 'Add Mixed Reality To Settings.reg'. 
-Double-click the file "Add Mixed Reality to Settings.reg" and confirm the import operation.
-This tweak adds the 32-DWORD value FirstRunSucceeded to the Registry with a value data of 1 under the key HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Holographic.
-
-After that this you can deinstall, open settings and go to "Mixed Reality".
-On the left, select Uninstall.
-
-## Changelog 1.31
-- added Get Help and Windows Camera
-- removed duplicated apps
-- minor changes
-
-## Changelog 1.3
-- added .reg files to remove "show compressed files as folders" functionally from Windows 7/8/10
-
-## Changelog 1.2
-
-- added removal of "Paint 3D" 
-  (a spinoff of Microsoft Paint, is one of several applications introduced with the Windows 10 Creators Update - just get paint.net)
-- added check for admin rights
-- added .reg file for removal of "Edit with Paint 3D" context menu
-- changed version to 1.1, marketing demanded it :-)
-- updated readme
-
 ## Description
 
 Powershell Script which deinstalls / removes Windows 10 apps, 
@@ -119,6 +91,34 @@ It's annoying too, so you can use: remove_edit_with_Paint_3D_context_menu to get
 - Tip: Open all your apps with explorer command "shell:appsfolder"
 - So reinstall all apps execute this command: Get-AppxPackage -AllUsers| Foreach {Add-AppxPackage -DisableDevelopmentMode -Register “$($_.InstallLocation)\AppXManifest.xml”}
 
+## Changelog 1.32
+Remove Onedrive from explorer and deinstall Mixed Reality Portal
+
+- I added 'registry-status-bar-onedrive-entry.jpg' how to remove the OneDrive link in the explorer, which is super annoying.
+- How to remove the Mixed Reality Portal -> 'Add Mixed Reality To Settings.reg'. 
+Double-click the file "Add Mixed Reality to Settings.reg" and confirm the import operation.
+This tweak adds the 32-DWORD value FirstRunSucceeded to the Registry with a value data of 1 under the key HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Holographic.
+
+After that this you can deinstall, open settings and go to "Mixed Reality".
+On the left, select Uninstall.
+
+## Changelog 1.31
+- added Get Help and Windows Camera
+- removed duplicated apps
+- minor changes
+
+## Changelog 1.3
+- added .reg files to remove "show compressed files as folders" functionally from Windows 7/8/10
+
+## Changelog 1.2
+
+- added removal of "Paint 3D" 
+  (a spinoff of Microsoft Paint, is one of several applications introduced with the Windows 10 Creators Update - just get paint.net)
+- added check for admin rights
+- added .reg file for removal of "Edit with Paint 3D" context menu
+- changed version to 1.1, marketing demanded it :-)
+- updated readme
+
 ## Disclaimer
 
 **Use the script at your own risk**, make backups, blah blah. 
@@ -127,3 +127,7 @@ I tested the script, it works for me, but I got only a few Windows 10 PCs to tes
 Suggestions, fixes and new features are welcome.
 
 Have a nice day, your Wurstcommander.
+
+
+## Requests / suggestions
+they are welcome
