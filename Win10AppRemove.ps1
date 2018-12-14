@@ -1,13 +1,10 @@
 ##################################################################################
-# Windows 10 Apps Remover 1.311
+# Windows 10 Apps Remover / Debloater 1.311
 # Powershell Script
 # Description:
 # Removes Windows 10 mandatory apps which can't be deinstalled via startmenu.
 #
 # Read the README.md !
-# Tip: 	Open all your installed apps with explorer command "shell:appsfolder"
-# 	    Get all app packagesnames:
-# 	    Get-AppxPackage -AllUsers | Select Name, PackageFullNameshell:appsfolder
 ##################################################################################
 
 
