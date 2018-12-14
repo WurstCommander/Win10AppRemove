@@ -2,7 +2,7 @@
 
 ## Description
 
-Powershell Script which deinstalls / removes Windows 10 apps (bloatware), 
+Powershell Script which deinstalls / removes the preinstalled Windows 10 apps (bloatware), this script can remove
 even mandatory apps like XBox which can't be deinstalled with normal measures like startmenu, programms and features and so on.
 Basicly it's debloating your Windows 10 install.
 
