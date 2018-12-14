@@ -26,7 +26,7 @@ After using the script you can that the execute level back to "Set-ExecutionPoli
    
 3. Start Windows Power Shell **with admin rights** (right click and "run as administrator") and start the script. Without admin rights the script will do nothing.
 
-### supported apps
+### Supported apps
 
 - Alarms & Clock
 - App Connector
@@ -89,9 +89,15 @@ It's annoying too, so you can use: remove_edit_with_Paint_3D_context_menu to get
 - In the current version of the script, I keep the weather app because I like it. I would suggest removing
   Money, News, Sports and Weather apps together and reinstall the weather app again if you want to use it.
 - Tip: Open all your apps with explorer command "shell:appsfolder"
-- So reinstall all apps execute this command: Get-AppxPackage -AllUsers| Foreach {Add-AppxPackage -DisableDevelopmentMode -Register “$($_.InstallLocation)\AppXManifest.xml”}
+- To reinstall all apps execute this command: Get-AppxPackage -AllUsers| Foreach {Add-AppxPackage -DisableDevelopmentMode -Register “$($_.InstallLocation)\AppXManifest.xml”}
+  This will restore the default state of all Windows 10 apps.
+- Get all app packagesnames use the follwing command:  "Get-AppxPackage -AllUsers | Select Name, PackageFullNameshell:appsfolder"
 
-## Changelog 1.32
+## Changelog 1.31
+
+- Some small changes to the readme, moves tips from script to readme, makes more sense.
+
+## Changelog 1.3
 Remove Onedrive from explorer and deinstall Mixed Reality Portal
 
 - I added 'registry-status-bar-onedrive-entry.jpg' how to remove the OneDrive link in the explorer, which is super annoying.
