@@ -97,11 +97,11 @@ It's annoying too, so you can use: remove_edit_with_Paint_3D_context_menu to get
   
 - Get all app packagesnames use the follwing command:  "Get-AppxPackage -AllUsers | Select Name, PackageFullNameshell:appsfolder"
 
-## Changelog 1.31
+## Changelog 1.34
 
 - Some small changes to the readme, moves tips from script to readme, makes more sense.
 
-## Changelog 1.3
+## Changelog 1.33
 Remove Onedrive from explorer and deinstall Mixed Reality Portal
 
 - I added 'registry-status-bar-onedrive-entry.jpg' how to remove the OneDrive link in the explorer, which is super annoying.
@@ -112,12 +112,12 @@ This tweak adds the 32-DWORD value FirstRunSucceeded to the Registry with a valu
 After that this you can deinstall, open settings and go to "Mixed Reality".
 On the left, select Uninstall.
 
-## Changelog 1.31
+## Changelog 1.32
 - added Get Help and Windows Camera
 - removed duplicated apps
 - minor changes
 
-## Changelog 1.3
+## Changelog 1.31
 - added .reg files to remove "show compressed files as folders" functionally from Windows 7/8/10
 
 ## Changelog 1.2
