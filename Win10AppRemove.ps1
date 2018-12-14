@@ -1,10 +1,11 @@
 ##################################################################################
-# Windows 10 Apps Remover / Debloater 1.311
+# Windows 10 Apps Remover / Debloater Changelog 1.34
 # Powershell Script
 # Description:
 # Removes Windows 10 mandatory apps which can't be deinstalled via startmenu.
+# Debloating the preinstalled shit nobody needs :-)
 #
-# Read the README.md !
+# Please read the README.md !
 ##################################################################################
 
 
