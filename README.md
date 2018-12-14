@@ -1,4 +1,4 @@
-# Windows 10 Apps Remover
+# Windows 10 Apps Remover / Debloater
 
 ## Description
 
