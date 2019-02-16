@@ -129,6 +129,10 @@ On the left, select Uninstall.
 - changed version to 1.1, marketing demanded it :-)
 - updated readme
 
+## Remove the App-Packages
+First use "Get-AppxProvisionedPackage -Online" to get the Packagename and then "Remove-AppxProvisionedPackage -Online -PackageName 
+For Example: "EMicrosoft.MicrosoftStickyNotes_3.1.46.0_neutral_~_8wekyb3d8bbwe" to remove the Packagefile
+
 ## Disclaimer
 
 **Use the script at your own risk**, make backups, blah blah. 
