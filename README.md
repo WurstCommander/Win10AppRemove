@@ -17,7 +17,7 @@ After using the script you can that the execute level back to "Set-ExecutionPoli
 
 (More here: http://windowsitpro.com/powershell/running-powershell-scripts-easy-1-2-3 and here: https://technet.microsoft.com/en-us/library/ee176961.aspx)
 
-1. Copy the script onto your hard drive into a directory which you won't forget two seconds after you copied the file :-)
+1. Copy the script onto your hard drive
 
 2. Edit the Powershell-Script (Win10AppRemove.ps1) and comment out the apps which you don't want to remove.
    Just put # before the line with the command like:
