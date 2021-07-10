@@ -2,7 +2,7 @@
 
 ## Description
 
-Powershell Script which deinstalls / removes the preinstalled Windows 10 apps (bloatware), this script can remove
+Powershell script which deinstalls / removes the preinstalled Windows 10 apps (bloatware), this script can remove
 even mandatory apps like XBox which can't be deinstalled with normal measures like startmenu, programms and features and so on.
 Basicly it's debloating your Windows 10 install.
 
@@ -21,6 +21,7 @@ After using the script you can that the execute level back to "Set-ExecutionPoli
 
 2. Edit the Powershell-Script (Win10AppRemove.ps1) and comment out the apps which you don't want to remove.
    Just put # before the line with the command like:
+   
    #get-appxpackage -allusers *alarms* | remove-appxpackage
    
    All apps without the comment character will be removed.
@@ -70,14 +71,14 @@ After using the script you can that the execute level back to "Set-ExecutionPoli
 
 I **strongly** advise against removing the Windows Store App.
 
-## Remove that Zip-Files as shown as folders by Windows 10
+## Remove that Zip-Files or .cab Files are shown as folders by Windows 10 Explorer
 Windows shows compressed files as folders, for files like .cab and .zip.
 
-I personally find this feature very annoying, "remove_zip_files_as_folders.reg" uses the Regedit to remove it.
+I personally find this feature very annoying, ```remove_zip_files_as_folders.reg``` uses the Regedit to remove it.
 Same for .cab Files -> "remove_cab_files_as_folders.reg"
 
 ## Removal of "Edit with Paint 3D" context menu
-It's annoying too, so you can use: remove_edit_with_Paint_3D_context_menu to get rid of it.
+It's annoying too, so you can use: ```remove_edit_with_Paint_3D_context_menu.reg``` to get rid of it.
 
 ## Tips / Workarounds
 
