@@ -12,7 +12,7 @@ At first, I would suggest that you deinstall all apps which you don't need via t
 Hover over the icon in the start menu, right click and choose "deinstall". This is the "normal" way to remove apps which aren't reluctant like the ones this script removes.
 
 **If this is your first time executing PowerShell Scripts you have to allow scripts to be executed:
-Execute this command in the PowerShell: "Set-ExecutionPolicy Unrestricted".
+Execute this command in the PowerShell: ```Set-ExecutionPolicy Unrestricted```.
 After using the script you can that the execute level back to "Set-ExecutionPolicy Restricted" if you like.**
 
 (More here: http://windowsitpro.com/powershell/running-powershell-scripts-easy-1-2-3 and here: https://technet.microsoft.com/en-us/library/ee176961.aspx)
@@ -82,7 +82,7 @@ It's annoying too, so you can use: remove_edit_with_Paint_3D_context_menu to get
 ## Tips / Workarounds
 
 - For finding errors:
-  If you don't get any errormessages, remove "#$ErrorActionPreference = "SilentlyContinue"" from the script. 
+  If you don't get any errormessages, remove ```#$ErrorActionPreference = "SilentlyContinue"``` from the script. 
   I included it, because some apps throw error messages (app is already removed etc.) 
   which the clear screen command (CLS) can't remove from the console. I don't know why, so I removed the spamming of the console. 
   Feel free to choose log-spamming or not :-)
@@ -90,12 +90,12 @@ It's annoying too, so you can use: remove_edit_with_Paint_3D_context_menu to get
 - In the current version of the script, I keep the weather app because I like it. I would suggest removing
   Money, News, Sports and Weather apps together and reinstall the weather app again if you want to use it.
   
-- Tip: Open all your apps with explorer command "shell:appsfolder"
+- Tip: Open all your apps with explorer command ```shell:appsfolder```
 
-- To reinstall all apps execute this command: "Get-AppxPackage -AllUsers| Foreach {Add-AppxPackage -DisableDevelopmentMode -Register “$($_.InstallLocation)\AppXManifest.xml”}"
+- To reinstall all apps execute this command: ```Get-AppxPackage -AllUsers| Foreach {Add-AppxPackage -DisableDevelopmentMode -Register “$($_.InstallLocation)\AppXManifest.xml”}```
   This will restore the default state of all Windows 10 apps.
   
-- Get all app packagesnames use the follwing command:  "Get-AppxPackage -AllUsers | Select Name, PackageFullNameshell:appsfolder"
+- Get all app packagesnames use the follwing command:  ```Get-AppxPackage -AllUsers | Select Name, PackageFullNameshell:appsfolder```
 
 ## Changelog 1.34
 
@@ -107,7 +107,7 @@ Remove Onedrive from explorer and deinstall Mixed Reality Portal
 - I added 'registry-status-bar-onedrive-entry.jpg' how to remove the OneDrive link in the explorer, which is super annoying.
 - How to remove the Mixed Reality Portal -> 'Add Mixed Reality To Settings.reg'. 
 Double-click the file "Add Mixed Reality to Settings.reg" and confirm the import operation.
-This tweak adds the 32-DWORD value FirstRunSucceeded to the Registry with a value data of 1 under the key HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Holographic.
+This tweak adds the 32-DWORD value FirstRunSucceeded to the Registry with a value data of 1 under the key ```HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Holographic```.
 
 After that this you can deinstall, open settings and go to "Mixed Reality".
 On the left, select Uninstall.
@@ -130,8 +130,8 @@ On the left, select Uninstall.
 - updated readme
 
 ## Remove the App-Packages
-First use "Get-AppxProvisionedPackage -Online" to get the Packagename and then "Remove-AppxProvisionedPackage -Online -PackageName 
-For Example: "EMicrosoft.MicrosoftStickyNotes_3.1.46.0_neutral_~_8wekyb3d8bbwe" to remove the Packagefile
+First use "Get-AppxProvisionedPackage -Online" to get the Packagename and then ```Remove-AppxProvisionedPackage -Online -PackageName 
+For Example: "EMicrosoft.MicrosoftStickyNotes_3.1.46.0_neutral_~_8wekyb3d8bbwe``` to remove the Packagefile
 
 ## Disclaimer
 
