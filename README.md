@@ -11,8 +11,8 @@ Basicly it's debloating your Windows 10 install.
 At first, I would suggest that you deinstall all apps which you don't need via the start menu. 
 Hover over the icon in the start menu, right click and choose "deinstall". This is the "normal" way to remove apps which aren't reluctant like the ones this script removes.
 
-**If this is your first time executing PowerShell Scripts you have to allow scripts to be executed:
-Execute this command in the PowerShell: ```Set-ExecutionPolicy Unrestricted```.
+**If this is your first time executing PowerShell Scripts you have to allow scripts to be executed.
+To do this, execute this command in the PowerShell: ```Set-ExecutionPolicy Unrestricted```.
 After using the script you can that the execute level back to "Set-ExecutionPolicy Restricted" if you like.**
 
 (More here: http://windowsitpro.com/powershell/running-powershell-scripts-easy-1-2-3 and here: https://technet.microsoft.com/en-us/library/ee176961.aspx)
@@ -70,7 +70,7 @@ After using the script you can that the execute level back to "Set-ExecutionPoli
 
 I **strongly** advise against removing the Windows Store App.
 
-## Remove Zip - Files as folders
+## Remove that Zip-Files as shown as folders by Windows 10
 Windows shows compressed files as folders, for files like .cab and .zip.
 
 I personally find this feature very annoying, "remove_zip_files_as_folders.reg" uses the Regedit to remove it.
@@ -96,6 +96,10 @@ It's annoying too, so you can use: remove_edit_with_Paint_3D_context_menu to get
   This will restore the default state of all Windows 10 apps.
   
 - Get all app packagesnames use the follwing command:  ```Get-AppxPackage -AllUsers | Select Name, PackageFullNameshell:appsfolder```
+
+## Changelog 1.35
+
+- Minor updates to the readme
 
 ## Changelog 1.34
 
